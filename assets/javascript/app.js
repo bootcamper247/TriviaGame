@@ -109,6 +109,7 @@ $(document).ready(function () {
       $("#opt3").text(trivia[count].option3);
       $("#opt4").text(trivia[count].option4);
       $("#circle").text(timeGiven);
+      $("#rectangle").text(timeGiven);
       $("#triviaScreen").show();
       startTimer();
     }
