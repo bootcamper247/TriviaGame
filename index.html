@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Trivia Game</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+    <div class="container-fluid">
+        <br>
+        <h1>The Trivia Game</h1>
+
+        <div class="row">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-10">
+                <div class="jumbotron">
+                    <div id="startScreen">
+                        <button id="start" class="btn btn-primary startBtn">Start</button>
+                        <p>There is a itme limit of 15 seconds for each question. You may begin anytime by pressing
+                            Start.</p>
+                    </div>
+                    <div id="triviaScreen">
+                        <div class="row">
+                            <div id="q-frame">
+                                <h2 id="question"></h2>
+                            </div>
+                        </div>
+                        <br>
+                        <div id="rectangle" class="col-sm-6">15</div>
+                        <br>
+                        <div class="row">
+                            <div class="col-sm-6 options mr-5">
+                                <h3 id="opt1"></h3>
+                            </div>
+                            <div class="col-sm-6 options">
+                                <h3 id="opt2"></h3>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6 options mr-5">
+                                <h3 id="opt3"></h3>
+                            </div>
+                            <div class="col-sm-6 options">
+                                <h3 id="opt4"></h3>
+                            </div>
+                        </div>
+                        <div id="circle" class="col-sm-6">15</div>
+                    </div>
+                    <div id="ansScreen">
+                        <h3 id="showText"></h3>
+                        <hr><br>
+                        <p>Time Remaining:&nbsp&nbsp<span id="timeLeft"></span></p>
+                        <br>
+                        <p id="ansInfo"></p>
+                        <br>
+                        <img id="ansImg" style="width: 85%"></img>
+                    </div>
+                    <div id="resultsScreen">
+                        <h3 id="showStats" class="header"></h3>
+                        <hr><br><br>
+                        <p>Correct Answers:<span id="correct"></span></p>
+                        <br>
+                        <p>Incorrect Answers:<span id="incorrect"></span></p>
+                        <br>
+                        <p>Unanswered:<span id="unanswered"></span></p>
+                        <br>
+                        <button id="reset" class="btn btn-primary startBtn">Play Again</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+    </div>
+
+    <script src="assets/javascript/app.js">
+    </script>
+
+</body>
+
+</html>
