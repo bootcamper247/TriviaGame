@@ -1,6 +1,7 @@
 ##### Georgia Tech Coding Boot Camp at Prototype Prime
 
 # The Trivia Game
+## https://bootcamper247.github.io/TriviaGame/
 ## HTML/CSS/JQuery
 
 - Here's how the app works:
